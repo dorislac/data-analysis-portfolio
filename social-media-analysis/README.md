@@ -3,18 +3,22 @@
 Kaggle link to the notebook and its outputs : https://www.kaggle.com/code/dorislacassagne/ad-click-prediction
 
 📌 Project Overview
+
 This project focuses on predicting whether a user will click on an online advertisement based on various factors such as demographics, browsing behavior, ad display context, and time of day. The goal is to leverage machine learning techniques to improve ad targeting strategies, optimize ad placement, and gain insights into user interactions with online advertisements.
 
 🔍 Dataset Description
+
 The dataset contains:
 - User demographics (age, gender, etc.)
 - Browsing behavior (web activity patterns)
 - Ad display context (type of website, ad category)
 - Time-related features (time of day, day of the week)
 - Click outcome (whether the user clicked on the ad or not)
+
 The challenge is to clean and preprocess the data, explore its structure, and apply predictive models to determine the likelihood of an ad click.
 
 🛠️ Workflow
+
 1. Data Cleaning & Preprocessing
 - Handle missing values and outliers
 - Convert categorical variables into numerical representations
