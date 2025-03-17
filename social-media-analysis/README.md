@@ -9,46 +9,28 @@ This project focuses on predicting whether a user will click on an online advert
 🔍 Dataset Description
 
 The dataset contains:
-- User demographics (age, gender, etc.)
-- Browsing behavior (web activity patterns)
-- Ad display context (type of website, ad category)
-- Time-related features (time of day, day of the week)
-- Click outcome (whether the user clicked on the ad or not)
+- id: Unique identifier for each user.
+- full_name: User's name formatted as "UserX" for anonymity.
+- age: Age of the user (ranging from 18 to 64 years).
+- gender: The gender of the user (categorized as Male, Female, or Non-Binary).
+- device_type: The type of device used by the user when viewing the ad (Mobile, Desktop, Tablet).
+- ad_position: The position of the ad on the webpage (Top, Side, Bottom).
+- browsing_history: The user's browsing activity prior to seeing the ad (Shopping, News, Entertainment, Education, Social Media).
+- time_of_day: The time when the user viewed the ad (Morning, Afternoon, Evening, Night).
+- click: The target label indicating whether the user clicked on the ad (1 for a click, 0 for no click).
 
 The challenge is to clean and preprocess the data, explore its structure, and apply predictive models to determine the likelihood of an ad click.
 
 🛠️ Workflow
-
-1. Data Cleaning & Preprocessing
-- Handle missing values and outliers
-- Convert categorical variables into numerical representations
+- Handling missing values
+- Visualize distributions
+- Encode categorical features as a one-hot numeric array
 - Normalize/scale numerical features
-
-2. Exploratory Data Analysis
-- Visualizing trends and correlations
-- Identifying feature importance
-
-3. Model Selection & Training
-- Comparing different classification models (Logistic Regression, Decision Trees, Random Forest, Gradient Boosting, etc.)
-- Hyperparameter tuning for optimal performance
-
-4. Evaluation & Interpretation
-- Measuring model performance (accuracy, precision, recall, F1-score, ROC-AUC)
-- Understanding key factors influencing ad clicks
-
-📈 Results & Insights
-- Which features most strongly predict ad clicks?
-- How does user behavior affect ad engagement?
-- Can machine learning models enhance ad targeting strategies?
+- Comparing different classification models (Logistic Regression and Random Forest)
 
 🛠️ Technologies Used
-- Python (Pandas, NumPy, Scikit-learn, Matplotlib, Seaborn)
+- Python (Pandas, NumPy, Sklearn, Matplotlib)
 - Kaggle Notebooks for experimentation
 - Machine Learning models for classification
-
-🚀 Next Steps
-- Further feature engineering to improve model accuracy
-- Experiment with deep learning techniques (e.g., neural networks)
-- Deploy the model as a web app for real-time predictions
 
 📢 Feel free to explore the code and contribute! 🚀
